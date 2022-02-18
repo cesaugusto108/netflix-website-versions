@@ -143,15 +143,15 @@ nav {
 #join {
 	height: 50%;
 	width: 100%;
-	text-align: center;
 	background-color: aliceblue;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 
-#join-central {
-	height: 70%;
+.join-central {
+      height: 80%;
+      text-align: center;
 	background-color: aquamarine;
 	display: flex;
 	flex-direction: column;
@@ -159,11 +159,11 @@ nav {
 	margin-top: -5%;
 }
 
-#join h3 {
+#join h3, #join2 h3 {
 	font-size: 130%;
 }
 
-#join form input {
+#join form input, #join2 form input {
 	width: 60%;
 	height: 200%;
 	border: none;
@@ -172,7 +172,7 @@ nav {
 	color: whitesmoke;
 }
 
-#join form button {
+#join form button, #join2 form button {
 	height: 200%;
 	margin-left: -5px;
 	border: none;
@@ -257,9 +257,56 @@ nav {
 	font-size: 110%;
 }
 
+/* join 2 */
+
+#join2 {
+      width: 100%;
+      height: 250px;
+      background-color: darkslategrey;
+      display: flex;
+      justify-content: center;
+}
+
 /* FOOTER // */
 
 footer {
 	height: 400px;
 	background-color: darkseagreen;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+}
+
+#footer-top {
+      height: 20%;
+      width: 100%;
+      text-align: center;
+      background-color: blueviolet;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+#footer-list-div {
+      height: 60%;
+      width: 100%;
+      background-color: tomato;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+#footer-list-div ul {
+      list-style-type: none;
+}
+
+#footer-bottom {
+      height: 20%;
+      width: 100%;
+      text-align: center;
+      background-color: springgreen;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
 }
