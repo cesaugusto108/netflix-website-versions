@@ -248,9 +248,10 @@ nav {
 
 #cards {
 	height: 100vh;
-	background-color: cornflowerblue;
 	display: flex;
 	flex-direction: column;
+      background-color: #000;
+      background-image: linear-gradient(to bottom, #000, #121212, #000);
 }
 
 .card-deck {
@@ -267,7 +268,6 @@ nav {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-color: bisque;
 }
 
 .card-text h2 {
@@ -282,10 +282,13 @@ nav {
 .card-img {
 	height: 100%;
 	width: 50%;
-	background-color: crimson;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.card-img img {
+      height: 50%;
 }
 
 .square-card {
