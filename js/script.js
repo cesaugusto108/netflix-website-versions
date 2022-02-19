@@ -2,9 +2,12 @@
 
 const nav = document.getElementById("nav");
 const hamMenu = document.getElementById("ham-menu");
+const loginButton = document.getElementById("login-button");
 const bottomLayer = document.getElementById("bottom-layer");
 const topLayer = document.getElementById("top-layer");
 const gradient = document.getElementById("gradient");
+const sideClose = document.getElementById("side-close");
+const loginForm = document.getElementById("login-form");
 
 function effects() {
       function hideNavbar() {
@@ -18,7 +21,6 @@ function effects() {
       }
 
       function bottomGradient() {
-            console.log(scrollY);
             if (scrollY > 2348) {
                   gradient.style.backgroundImage = "linear-gradient(to top, rgba(223, 7, 18, 0.5), #000, #000)";
             } else {
@@ -33,7 +35,22 @@ function effects() {
 function showSideNavBar() {
       bottomLayer.style.display = "flex";
       topLayer.style.left = "360px";
+      hamMenu.style.opacity = "0";
+      hamMenu.style.cursor = "default";
+      nav.style.opacity = "0";
+      nav.style.pointerEvents = "none";
+}
+
+function hideSideNavBar() {
+      bottomLayer.style.display = "none";
+      topLayer.style.left = "0";
+      hamMenu.style.opacity = "1";
+      hamMenu.style.cursor = "pointer";
+      nav.style.opacity = "1";
+      nav.style.pointerEvents = "all";
 }
 
 window.addEventListener("scroll", effects);
 hamMenu.addEventListener("click", showSideNavBar);
+loginButton.addEventListener("click", showSideNavBar);
+sideClose.addEventListener("click", hideSideNavBar);

@@ -35,6 +35,25 @@ ul {
       flex-direction: column;
 }
 
+.side-close {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+}
+
+.side-close button{
+      font-size: 200%;
+      color: rgba(223, 7, 18, 0.7);
+      background-color: transparent;
+      border: none;
+      outline: none;
+}
+
+.side-close button:focus {
+      color: rgb(223, 7, 18);
+      background-color: #00000020;
+}
+
 /* bottom-layer-div-1 */
 
 .bottom-layer-div-1 {
@@ -298,7 +317,7 @@ nav.active {
 }
 
 .nav-login-button button {
-	margin-top: 10%;
+	margin-top: 7%;
       margin-right: 5%;
       background-color: rgba(223, 7, 18, 0.7);
       border: none;
