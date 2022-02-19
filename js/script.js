@@ -7,7 +7,7 @@ const bottomLayer = document.getElementById("bottom-layer");
 const topLayer = document.getElementById("top-layer");
 const gradient = document.getElementById("gradient");
 const sideClose = document.getElementById("side-close");
-const loginForm = document.getElementById("login-form");
+const joinInput = document.getElementById("join-input2");
 
 function effects() {
       function hideNavbar() {
@@ -23,8 +23,10 @@ function effects() {
       function bottomGradient() {
             if (scrollY > 2348) {
                   gradient.style.backgroundImage = "linear-gradient(to top, rgba(223, 7, 18, 0.5), #000, #000)";
+                  joinInput.style.border = "none";
             } else {
                   gradient.style.backgroundImage = "linear-gradient(to top, #000, #000, #000)";
+                  joinInput.style.border = "1px solid #444";
             }
       }
 
