@@ -31,9 +31,8 @@ ul {
       top: 0;
       left: 0;
       background-color: #333;
-      display: flex;
-      flex-direction: column;
       display: none;
+      flex-direction: column;
 }
 
 /* bottom-layer-div-1 */
@@ -105,7 +104,6 @@ ul {
 
 /* bottom-layer-div-2 */
 
-
 .bottom-layer-div-2 {
       width: 360px;
       height: 50%;
@@ -145,17 +143,53 @@ ul {
       width: 100%;
       position: absolute;
       top: 0;
-      /* left: 360px; */
-      /* display: none; */
+      left: 0px;
 }
 
 /* HEADER // */
 
 header {
-	background-color: beige;
 	height: 100vh;
 	position: relative;
 	display: flex;
+      flex-direction: column;
+}
+
+/* HAM-MENU */
+
+.ham-menu {
+      width: 5%;
+      height: 10%;
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+}
+
+#ham-menu {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 80px;
+      width: 80px;
+      border: none;
+      background-color: transparent;
+      outline: none;
+      z-index: 2;
+}
+
+.bi-list {
+      color: rgba(223, 7, 18, 0.7);
+      font-size: 40px;
+      margin-left: 15%;
+      margin-top: 15%;
+}
+
+#ham-menu:focus .bi-list{
+      color: rgb(223, 7, 18);
+      text-shadow: 1px 1px 2px rgb(223, 7, 18);
 }
 
 /* NAV */
@@ -165,8 +199,11 @@ nav {
 	width: 100%;
 	position: fixed;
 	display: flex;
-      transition: all 0.7s ease-in-out;
 	z-index: 1;
+}
+
+nav.active {
+      display: none;
 }
 
 .nav-shadow {
@@ -401,7 +438,6 @@ nav {
 	flex-direction: column;
       background-color: #000;
       background-image: linear-gradient(to bottom, #000, #121212, #000);
-      margin-left: 5%;
 }
 
 .card-deck-1, .card-deck-2 {
@@ -448,11 +484,6 @@ nav {
 }
 
 /* accordion */
-
-.gradient {
-      transition: all 0.7s ease-in-out;
-      background-image: linear-gradient(to top, rgba(223, 7, 18, 0.5), #000, #000);
-}
 
 #accordion {
 	height: 100vh;
