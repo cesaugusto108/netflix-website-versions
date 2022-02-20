@@ -1,15 +1,15 @@
 body {
-	background-color: #000;
+      background-color: #000;
       /* background-color: green; */
-	font-size: 1rem;
-	font-family: "Nunito", sans-serif;
+      font-size: 1rem;
+      font-family: "Nunito", sans-serif;
       color: whitesmoke;
       position: relative;
       overflow-x: hidden;
 }
 
 a {
-	text-decoration: none;
+      text-decoration: none;
       color: whitesmoke;
       font-weight: 900;
 }
@@ -41,7 +41,7 @@ ul {
       align-items: flex-start;
 }
 
-.side-close button{
+.side-close button {
       font-size: 200%;
       color: rgba(223, 7, 18, 0.7);
       background-color: transparent;
@@ -117,7 +117,8 @@ ul {
       outline: none;
 }
 
-.side-login-button button:active, .side-login-button button:focus {
+.side-login-button button:active,
+.side-login-button button:focus {
       background-color: rgb(223, 7, 18);
 }
 
@@ -168,9 +169,9 @@ ul {
 /* HEADER // */
 
 header {
-	height: 100vh;
-	position: relative;
-	display: flex;
+      height: 100vh;
+      position: relative;
+      display: flex;
       flex-direction: column;
 }
 
@@ -206,7 +207,7 @@ header {
       margin-top: 15%;
 }
 
-#ham-menu:focus .bi-list{
+#ham-menu:focus .bi-list {
       color: rgb(223, 7, 18);
       text-shadow: 1px 1px 2px rgb(223, 7, 18);
 }
@@ -214,11 +215,11 @@ header {
 /* NAV */
 
 nav {
-	height: 35%;
-	width: 100%;
-	position: fixed;
-	display: flex;
-	z-index: 1;
+      height: 35%;
+      width: 100%;
+      position: fixed;
+      display: flex;
+      z-index: 1;
 }
 
 nav.active {
@@ -226,7 +227,7 @@ nav.active {
 }
 
 .nav-shadow {
-      background-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0.5), rgba(0,0,0,0));
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
       height: 50%;
       width: 100%;
       position: absolute;
@@ -238,64 +239,88 @@ nav.active {
 /* nav-div-1 */
 
 .nav-div-1 {
-	height: 100%;
-	width: 100%;
-	display: flex;
+      height: 100%;
+      width: 55%;
+      display: flex;
 }
 
 .nav-logo {
-	height: 100%;
-	width: 20%;
+      height: 100%;
+      width: 20%;
 }
 
 .nav-logo img {
-	margin-top: 13%;
-	margin-left: 10%;
+      margin-top: 13%;
+      margin-left: 10%;
       height: 15%;
       width: 92%;
 }
 
 .nav-menu {
-	height: 100%;
-	width: 80%;
+      height: 100%;
+      width: 80%;
 }
 
 .nav-menu ul {
-	margin-top: 6%;
-	display: flex;
-	justify-content: center;
+      margin-top: 4%;
+      display: flex;
+      justify-content: center;
 }
 
 .nav-menu ul li {
-	padding: 0 1.5%;
+      padding: 0 1.5%;
+}
+
+.nav-menu button {
+      height: 80px;
+      width: 80px;
+      border: none;
+      background-color: #00000050;
+      outline: none;
+      display: none;
+}
+
+.nav-menu button:focus {
+      color: rgb(223, 7, 18);
+      text-shadow: 1px 1px 2px rgb(223, 7, 18);
+      background-color: #000;
+}
+
+.nav-menu .bi-list {
+      margin-top: 0;
+      margin-left: 0;
+}
+
+#login-list-item {
+      display: none;
 }
 
 /* nav-div-2 */
 
 .nav-div-2 {
-	height: 100%;
-	width: 100%;
-	display: flex;
+      height: 100%;
+      width: 45%;
+      display: flex;
       justify-content: space-between;
 }
 
 .nav-login {
-	height: 100%;
-	width: 60%;
-	display: flex;
-	justify-content: flex-end;
+      height: 100%;
+      width: 60%;
+      display: flex;
+      justify-content: flex-end;
 }
 
 .nav-login form {
-	margin-top: 1%;
+      margin-top: 1%;
       margin-right: 3%;
-	width: 65%;
-	display: flex;
+      width: 65%;
+      display: flex;
 }
 
 .nav-login input {
-	width: 140%;
-	height: 20%;
+      width: 140%;
+      height: 20%;
       background-color: transparent;
       border: none;
       color: whitesmoke;
@@ -309,15 +334,15 @@ nav.active {
 }
 
 .nav-login-button {
-	height: 100%;
-	width: 40%;
+      height: 100%;
+      width: 40%;
       display: flex;
       justify-content: flex-end;
       align-items: flex-start;
 }
 
 .nav-login-button button {
-	margin-top: 7%;
+      margin-top: 7%;
       margin-right: 5%;
       background-color: rgba(223, 7, 18, 0.7);
       border: none;
@@ -327,39 +352,40 @@ nav.active {
       outline: none;
 }
 
-.nav-login-button button:active, .nav-login-button button:focus {
+.nav-login-button button:active,
+.nav-login-button button:focus {
       background-color: rgb(223, 7, 18);
 }
 
 /* INNER HEADER */
 
 .inner-header {
-	height: 100%;
-	width: 100%;
+      height: 100%;
+      width: 100%;
       background-image: url(../assets/img/Netflix-Background.jpg);
       background-position: center;
       background-size: cover;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       z-index: 0;
 }
 
 .inner-header::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
       height: 100%;
       width: 100%;
-      background-color: rgba(0,0,0,0.6);
+      background-color: rgba(0, 0, 0, 0.6);
       z-index: -2;
 }
 
 .central-content {
-	height: 50%;
-	min-height: 250px;
-	width: 70%;
+      height: 50%;
+      min-height: 250px;
+      width: 70%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -367,83 +393,102 @@ nav.active {
 }
 
 .main-post {
-	height: 50%;
-	width: 100%;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+      height: 50%;
+      width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 }
 
 .main-post h1 {
-	font-size: 400%;
-	font-weight: 900;
+      font-size: 400%;
+      font-weight: 900;
 }
 
 .main-post h2 {
-	font-size: 200%;
+      font-size: 200%;
 }
 
 .join {
-	height: 50%;
-	width: 80%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+      height: 50%;
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 }
 
 .join-central {
       height: 80%;
       text-align: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	margin-top: -5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: -5%;
 }
 
-.join h3, .join2 h3 {
-	font-size: 130%;
+.join2 .join-central {
+      width: 100%;
 }
 
-.join form input, .join2 form input {
-	width: 60%;
-	height: 260%;
-	border: none;
-	padding-left: 2%;
-	background-color: transparent;
-      background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
-	color: whitesmoke;
+.join h3,
+.join2 h3 {
+      font-size: 130%;
+}
+
+.join form {
+      width: 100%;
+}
+
+.join2 .join-central form {
+      width: 60%;
+}
+
+.join form input,
+.join2 form input {
+      width: 60%;
+      height: 260%;
+      border: none;
+      padding-left: 2%;
+      background-color: transparent;
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+      color: whitesmoke;
       outline: none;
 }
 
-.join form input:focus, .join2 form input:focus {
+.join form input:focus,
+.join2 form input:focus {
       background-color: #000;
       text-shadow: 1px 1px 1px whitesmoke;
 }
 
-.join form button, .join2 form button {
-	height: 260%;
-	margin-left: -5px;
-	border: none;
-	background-color: rgba(223, 7, 18, 0.7);
-	color: whitesmoke;
+.join form button,
+.join2 form button {
+      height: 260%;
+      margin-left: -5px;
+      border: none;
+      background-color: rgba(223, 7, 18, 0.7);
+      color: whitesmoke;
       font-weight: 900;
-	padding: 0 5%;
+      padding: 0 5%;
       outline: none;
 }
 
-.join form button:focus, .join2 form button:focus {
+.join form button:focus,
+.join2 form button:focus {
       background-color: rgb(223, 7, 18);
-} 
+}
 
 /* shadow */
 
 .shadow {
       width: 100%;
-      height: 35%;
+      height: 25%;
       position: absolute;
       bottom: 0;
-      background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
       z-index: 1;
 }
 
@@ -452,45 +497,46 @@ nav.active {
 /* cards */
 
 .cards {
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
       background-color: #000;
       background-image: linear-gradient(to bottom, #000, #121212, #000);
 }
 
-.card-deck-1, .card-deck-2 {
-	height: 50%;
-	width: 100%;
-	display: flex;
+.card-deck-1,
+.card-deck-2 {
+      height: 50%;
+      width: 100%;
+      display: flex;
       margin-left: 3%;
 }
 
 .card-text-content {
-	height: 100%;
-	width: 50%;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+      height: 100%;
+      width: 50%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
 }
 
 .card-text-content h2 {
-	font-size: 200%;
-	font-weight: 900;
+      font-size: 200%;
+      font-weight: 900;
 }
 
 .card-text-content h3 {
-	font-size: 140%;
+      font-size: 140%;
 }
 
 .card-image {
-	height: 100%;
-	width: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+      height: 100%;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 }
 
 .card-image img {
@@ -498,20 +544,20 @@ nav.active {
 }
 
 .square-card {
-	height: 100%;
-	width: 50%;
-	display: flex;
+      height: 100%;
+      width: 50%;
+      display: flex;
 }
 
 /* accordion */
 
 #accordion {
-	height: 100vh;
-	width: 100%;
-	display: flex;
+      height: 100vh;
+      width: 100%;
+      display: flex;
       flex-direction: column;
-	justify-content: space-evenly;
-	align-items: center;
+      justify-content: space-evenly;
+      align-items: center;
 }
 
 #accordion h3 {
@@ -524,12 +570,12 @@ nav.active {
 }
 
 .accordion-header button {
-	font-size: 90%;
-	font-weight: bold;
+      font-size: 90%;
+      font-weight: bold;
 }
 
 .accordion-body p {
-	font-size: 110%;
+      font-size: 110%;
 }
 
 /* join 2 */
@@ -544,7 +590,7 @@ nav.active {
 /* FOOTER // */
 
 footer {
-	height: 400px;
+      height: 400px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -552,11 +598,11 @@ footer {
 }
 
 footer a {
-      color: #AAA;
+      color: #aaa;
 }
 
 footer a:hover {
-      color: #FFF
+      color: #fff;
 }
 
 .footer-top {
@@ -572,8 +618,14 @@ footer a:hover {
       height: 60%;
       width: 100%;
       display: flex;
-      justify-content: space-around;
-      align-items: center;
+      justify-content: center;
+      align-items: flex-start;
+}
+
+.footer-list-column {
+      display: flex;
+      padding-top: 4%;
+
 }
 
 .footer-bottom {
@@ -583,4 +635,240 @@ footer a:hover {
       display: flex;
       justify-content: space-around;
       align-items: center;
+}
+
+/* AJUSTES PARA MOBILE //// */
+
+@media (max-width: 1185px) {
+      .nav-div-1 {
+            width: 100%;
+      }
+
+      .nav-div-2 {
+            display: none;
+      }
+
+      .nav-logo img {
+            transform: scale(0.8);
+      }
+
+      #login-list-item {
+            display: block;
+      }
+
+      .cards {
+            height: 200vh;
+      }
+
+      .card-deck-1,
+      .card-deck-2 {
+            flex-direction: column;
+            align-items: center;
+      }
+
+      .card-text-content,
+      .card-image,
+      .square-card {
+            width: 100%;
+      }
+
+      .accordion {
+            margin-top: 0;
+            width: 80%;
+      }
+}
+
+@media (max-width: 1000px) {
+      .join form {
+            width: 160%;
+      }
+      
+      .cards {
+            height: 400vh;
+      }
+
+      .square-card {
+            flex-direction: column;
+            align-items: center;
+      }
+
+      .card-text-content,
+      .card-image {
+            width: 50%;
+      }
+
+      .card-image {
+            height: 50%;
+            align-items: flex-start;
+      }
+
+      .card-image img {
+            height: 100%;
+      }
+}
+
+@media (max-width: 795px) {
+      .nav-div-1 {
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+      }
+
+      .nav-logo img {
+            transform: scale(1.2);
+            margin-left: 4%;
+      }
+
+      .nav-menu {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: -12%;
+      }
+
+      .nav-menu ul {
+            display: none;
+      }
+
+      .nav-menu button {
+            display: block;
+      }
+
+      .central-content {
+            width: 100%;
+      }
+
+      .join form, .join2 form {
+            width: 100%;
+      }
+}
+
+@media (max-width: 660px) {
+      .main-post h1 {
+            font-size: 270%;
+      }
+
+      .main-post h2 {
+            font-size: 170%;
+      }
+
+      .join {
+            width: 100%;
+      }
+
+      .join2 .join-central form {
+            width: 100%;
+      }
+
+      .join h3,
+      .join2 h3 {
+            font-size: 110%;
+      }
+
+      .card-image img {
+            transform: scale(0.7);
+      }
+
+      #accordion {
+            height: 120vh;
+      }
+
+      footer {
+            height: 100vh;
+      }
+
+      .footer-list-div {
+            flex-direction: column;
+            align-items: center;
+            
+      }
+
+      .footer-list-column {
+            width: 100%;
+            justify-content: center;
+      }
+      
+      .footer-list1 {
+            width: 250px;
+            font-size: 0.9rem;
+      }
+
+}
+
+@media (max-width: 415px) {
+      .main-post {
+            min-height: 300px;
+            justify-content: space-around;
+      }
+
+      .main-post h1 {
+            font-size: 200%;
+      }
+
+      .main-post h2 {
+            font-size: 120%;
+            width: 70%;
+      }
+
+      .join {
+            height: 100%;
+      }
+
+      .join-central {
+            height: 300px;
+      }
+
+      .join form {
+            height: 150px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+      }
+
+      .join-central form input {
+            width: 90%;
+            height: 70px;
+      }
+
+      .join form button, .join2 form button {
+            height: 60px;
+      }
+
+      .join h3,
+      .join2 h3 {
+            font-size: 100%;
+            width: 90%;
+      }
+
+      .shadow {
+            height: 40px;
+      }
+
+      #accordion {
+            height: 105vh;
+      }
+
+      #accordion h3 {
+            font-size: 190%;
+      }
+
+      .accordion {
+            width: 90%;
+      }
+}
+
+@media (max-width: 300px) {
+      .card-image img {
+            transform: scale(0.4);
+      }
+
+      #accordion {
+            height: 155vh;
+      }
+
+      .accordion {
+            margin-top: -20%;
+      }
 }

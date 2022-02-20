@@ -3,6 +3,8 @@
 const nav = document.getElementById("nav");
 const hamMenu = document.getElementById("ham-menu");
 const loginButton = document.getElementById("login-button");
+const loginListItem = document.getElementById("login-list-item");
+const menuButton = document.getElementById("nav-menu-button");
 const bottomLayer = document.getElementById("bottom-layer");
 const topLayer = document.getElementById("top-layer");
 const gradient = document.getElementById("gradient");
@@ -55,4 +57,6 @@ function hideSideNavBar() {
 window.addEventListener("scroll", effects);
 hamMenu.addEventListener("click", showSideNavBar);
 loginButton.addEventListener("click", showSideNavBar);
+loginListItem.addEventListener("click", showSideNavBar);
+menuButton.addEventListener("click", showSideNavBar);
 sideClose.addEventListener("click", hideSideNavBar);
