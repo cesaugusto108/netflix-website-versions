@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
       <head>
             <meta charset="UTF-8" />
             <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,7 +8,10 @@
             <!-- Google Fonts -->
             <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-            <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet" />
+            <link
+                  href="https://fonts.googleapis.com/css2?family=Anton&family=Nunito&display=swap"
+                  rel="stylesheet"
+            />
 
             <!-- Bootstrap -->
             <link
@@ -19,7 +22,10 @@
             />
 
             <!-- Bootstrap icons -->
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+            <link
+                  rel="stylesheet"
+                  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+            />
 
             <!-- Bootstrap JS -->
             <script
@@ -37,424 +43,97 @@
 
             <title>Netflix Brasil - assistir a séries online, assistir a filmes online</title>
 
-            <link rel="shortcut icon" href="/assets/img/netflix.png" type="image/x-icon" />
+            <link
+                  rel="shortcut icon"
+                  href="/Version 2/assets/Netflix_2015_N_logo.svg.png"
+                  type="image/x-icon"
+            />
       </head>
       <body>
-            <div class="bottom-layer" id="bottom-layer">
-                  <div class="bottom-layer-div-1">
-                        <div class="side-close">
-                              <button id="side-close"><i class="bi bi-x"></i></button>
-                        </div>
-                        <div class="side-login">
-                              <form action="" id="login-form">
-                                    <input type="email" placeholder="Email" id="login-form-input" />
-                                    <input type="password" placeholder="Senha" />
-                              </form>
-                        </div>
-                        <div class="side-login-button">
-                              <button>Entrar</button>
-                        </div>
-                  </div>
-                  <div class="bottom-layer-div-2">
-                        <div class="side-menu">
-                              <ul>
-                                    <li>
-                                          <a href="">Fimes</a>
-                                    </li>
-                                    <li>
-                                          <a href="">Séries</a>
-                                    </li>
-                                    <li>
-                                          <a href="">Documentários</a>
-                                    </li>
-                                    <li>
-                                          <a href="">Kids</a>
-                                    </li>
-                                    <li>
-                                          <a href="">Website in English</a>
-                                    </li>
-                              </ul>
-                        </div>
-                        <div class="side-logo">
-                              <img src="/assets/img/netflix-logo.png" alt="" />
-                        </div>
-                  </div>
-            </div>
-            <div class="top-layer" id="top-layer">
-                  <header>
-                        <div class="ham-menu">
-                              <button id="ham-menu"><i class="bi bi-list"></i></button>
-                        </div>
-                        <div class="shadow"></div>
-                        <nav id="nav">
-                              <div class="nav-shadow"></div>
-
-                              <div class="nav-div-1" id="nav-div-1">
-                                    <div class="nav-logo">
-                                          <img src="/assets/img/netflix-logo.png" alt="" />
-                                    </div>
-                                    <div class="nav-menu">
-                                          <ul>
-                                                <li>
-                                                      <a href="">Fimes</a>
-                                                </li>
-                                                <li>
-                                                      <a href="">Séries</a>
-                                                </li>
-                                                <li>
-                                                      <a href="">Documentários</a>
-                                                </li>
-                                                <li>
-                                                      <a href="">Kids</a>
-                                                </li>
-                                                <li>
-                                                      <a href="">Website in English</a>
-                                                </li>
-                                                <li id="login-list-item"><a href="#login-form-input">Fazer login</a></li>
-                                          </ul>
-                                          <button id="nav-menu-button"><i class="bi bi-list"></i></button>
-                                    </div>
-                              </div>
-
-                              <div class="nav-div-2" id="nav-div-2">
-                                    <div class="nav-login"></div>
-                                    <div class="nav-login-button">
-                                          <button id="login-button">Fazer login</button>
-                                    </div>
-                              </div>
-                        </nav>
-
-                        <div class="inner-header">
-                              <div class="central-content">
-                                    <div class="main-post">
-                                          <h1>Filmes, séries e muito mais. Sem limites.</h1>
-                                          <h2>Assista onde quiser. Cancele quando quiser.</h2>
-                                    </div>
-
-                                    <div class="join">
-                                          <div class="join-central">
-                                                <h3>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</h3>
-                                                <form action="">
-                                                      <input type="email" name="" class="" placeholder="Email" />
-                                                      <button>Vamos lá</button>
-                                                </form>
-                                          </div>
-                                    </div>
-                              </div>
-                        </div>
-                  </header>
-
-                  <section class="cards">
-                        <div class="card-deck-1">
-                              <div class="card1 square-card">
-                                    <div class="card-text-content">
-                                          <h2>Aproveite na TV.</h2>
-                                          <h3>Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros dispositivos.</h3>
-                                    </div>
-                                    <div class="card-image">
-                                          <img src="/assets/img/tv.png" alt="tv-img" />
-                                    </div>
-                              </div>
-                              <div class="card2 square-card">
-                                    <div class="card-text-content">
-                                          <h2>Baixe séries para assistir offline.</h2>
-                                          <h3>Salve seus títulos favoritos e sempre tenha algo para assistir.</h3>
-                                    </div>
-                                    <div class="card-image">
-                                          <img src="/assets/img/mobile.png" alt="mobile-img" />
-                                    </div>
-                              </div>
-                        </div>
-
-                        <div class="card-deck-2">
-                              <div class="card3 square-card">
-                                    <div class="card-text-content">
-                                          <h2>Assista quando quiser.</h2>
-                                          <h3>Assista no celular, tablet, Smart TV ou notebook sem pagar a mais por isso.</h3>
-                                    </div>
-                                    <div class="card-image">
-                                          <img src="/assets/img/device-pile.png" alt="devices-img" />
-                                    </div>
-                              </div>
-                              <div class="card4 square-card">
-                                    <div class="card-text-content">
-                                          <h2>Crie perfis para crianças.</h2>
-                                          <h3>
-                                                Deixe as crianças se aventurarem com seus personagens favoritos em um espaço feito só para elas, sem pagar a
-                                                mais por isso.
-                                          </h3>
-                                    </div>
-                                    <div class="card-image">
-                                          <img src="/assets/img/kids.png" alt="" />
-                                    </div>
-                              </div>
-                        </div>
-                  </section>
-
-                  <div class="gradient" id="gradient">
-                        <section id="accordion">
-                              <h3>Perguntas frequentes</h3>
-                              <div class="accordion" id="accordionExample">
-                                    <div class="accordion-item">
-                                          <h2 class="accordion-header" id="headingOne">
-                                                <button
-                                                      class="accordion-button bg-dark text-light"
-                                                      type="button"
-                                                      data-bs-toggle="collapse"
-                                                      data-bs-target="#collapseOne"
-                                                      aria-expanded="true"
-                                                      aria-controls="collapseOne"
+            <header>
+                  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                        <div class="container-fluid">
+                              <button
+                                    class="navbar-toggler"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#navbarTogglerDemo03"
+                                    aria-controls="navbarTogglerDemo03"
+                                    aria-expanded="false"
+                                    aria-label="Toggle navigation"
+                              >
+                                    <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <a class="navbar-brand" href="#"
+                                    ><img
+                                          src="/Version 2/assets/Netflix_2015_logo.svg"
+                                          alt="netflix-logo"
+                                          width="100%"
+                                          height="100%"
+                              /></a>
+                              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                          <li class="nav-item">
+                                                <a class="nav-link active" aria-current="page" href="#"
+                                                      >Home</a
                                                 >
-                                                      O que é a Netflix
-                                                </button>
-                                          </h2>
-                                          <div
-                                                id="collapseOne"
-                                                class="accordion-collapse collapse show"
-                                                aria-labelledby="headingOne"
-                                                data-bs-parent="#accordionExample"
-                                          >
-                                                <div class="accordion-body bg-dark text-light">
-                                                      <p>
-                                                            A Netflix é um serviço de transmissão online que oferece uma ampla variedade de séries, filmes e
-                                                            documentários premiados em milhares de aparelhos conectados à internet.
-                                                      </p>
-
-                                                      <p>
-                                                            Você pode assistir a quantos filmes e séries quiser, quando e onde quiser, sem comerciais – tudo por
-                                                            um preço mensal bem acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas
-                                                            séries e filmes.
-                                                      </p>
-                                                </div>
-                                          </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                          <h2 class="accordion-header" id="headingTwo">
-                                                <button
-                                                      class="accordion-button collapsed bg-dark text-light"
-                                                      type="button"
-                                                      data-bs-toggle="collapse"
-                                                      data-bs-target="#collapseTwo"
-                                                      aria-expanded="false"
-                                                      aria-controls="collapseTwo"
-                                                >
-                                                      Quanto custa a Netflix?
-                                                </button>
-                                          </h2>
-                                          <div
-                                                id="collapseTwo"
-                                                class="accordion-collapse collapse"
-                                                aria-labelledby="headingTwo"
-                                                data-bs-parent="#accordionExample"
-                                          >
-                                                <div class="accordion-body bg-dark text-light">
-                                                      Assista à Netflix no seu celular, tablet, Smart TV, notebook ou aparelho de streaming por uma taxa mensal
-                                                      única. Os planos variam de R$25,90 a R$55,90 por mês. Sem contrato nem taxas extras.
-                                                </div>
-                                          </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                          <h2 class="accordion-header" id="headingThree">
-                                                <button
-                                                      class="accordion-button collapsed bg-dark text-light"
-                                                      type="button"
-                                                      data-bs-toggle="collapse"
-                                                      data-bs-target="#collapseThree"
-                                                      aria-expanded="false"
-                                                      aria-controls="collapseThree"
-                                                >
-                                                      Onde posso assistir?
-                                                </button>
-                                          </h2>
-                                          <div
-                                                id="collapseThree"
-                                                class="accordion-collapse collapse"
-                                                aria-labelledby="headingThree"
-                                                data-bs-parent="#accordionExample"
-                                          >
-                                                <div class="accordion-body bg-dark text-light">
-                                                      <p>
-                                                            Assista onde quiser, quando quiser. Faça login com sua conta Netflix em netflix.com para começar a
-                                                            assistir no computador ou em qualquer aparelho conectado à Internet compatível com o aplicativo
-                                                            Netflix, como Smart TVs, smartphones, tablets, aparelhos de streaming e videogames.
-                                                      </p>
-
-                                                      <p>
-                                                            Você também pode baixar a sua série favorita com o aplicativo Netflix para iOS, Android ou Windows
-                                                            10. Use downloads para levar a Netflix para onde quiser sem precisar de conexão com a Internet. Leve
-                                                            a Netflix com você para qualquer lugar.
-                                                      </p>
-                                                </div>
-                                          </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                          <h2 class="accordion-header" id="headingFour">
-                                                <button
-                                                      class="accordion-button collapsed bg-dark text-light"
-                                                      type="button"
-                                                      data-bs-toggle="collapse"
-                                                      data-bs-target="#collapseFour"
-                                                      aria-expanded="false"
-                                                      aria-controls="collapseFour"
-                                                >
-                                                      Como faço para cancelar?
-                                                </button>
-                                          </h2>
-                                          <div
-                                                id="collapseFour"
-                                                class="accordion-collapse collapse"
-                                                aria-labelledby="headingFour"
-                                                data-bs-parent="#accordionExample"
-                                          >
-                                                <div class="accordion-body bg-dark text-light">
-                                                      A Netflix é flexível. Não há contratos nem compromissos. Você pode cancelar a sua conta na internet com
-                                                      apenas dois cliques. Não há taxa de cancelamento – você pode começar ou encerrar a sua assinatura a
-                                                      qualquer momento.
-                                                </div>
-                                          </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                          <h2 class="accordion-header" id="headingFive">
-                                                <button
-                                                      class="accordion-button collapsed bg-dark text-light"
-                                                      type="button"
-                                                      data-bs-toggle="collapse"
-                                                      data-bs-target="#collapseFive"
-                                                      aria-expanded="false"
-                                                      aria-controls="collapseFive"
-                                                >
-                                                      O que eu posso assistir na Netflix?
-                                                </button>
-                                          </h2>
-                                          <div
-                                                id="collapseFive"
-                                                class="accordion-collapse collapse"
-                                                aria-labelledby="headingFive"
-                                                data-bs-parent="#accordionExample"
-                                          >
-                                                <div class="accordion-body bg-dark text-light">
-                                                      A Netflix tem um grande catálogo de filmes, documentários, séries, originais Netflix premiados e muito
-                                                      mais. Assista o quanto quiser, quando quiser.
-                                                </div>
-                                          </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                          <h2 class="accordion-header" id="headingSix">
-                                                <button
-                                                      class="accordion-button collapsed bg-dark text-light"
-                                                      type="button"
-                                                      data-bs-toggle="collapse"
-                                                      data-bs-target="#collapseSix"
-                                                      aria-expanded="false"
-                                                      aria-controls="collapseSix"
-                                                >
-                                                      A Netflix é adequada para crianças?
-                                                </button>
-                                          </h2>
-                                          <div
-                                                id="collapseSix"
-                                                class="accordion-collapse collapse"
-                                                aria-labelledby="headingSix"
-                                                data-bs-parent="#accordionExample"
-                                          >
-                                                <div class="accordion-body bg-dark text-light">
-                                                      <p>
-                                                            A experiência infantil da Netflix faz parte da sua assinatura para que as crianças se divirtam em
-                                                            seu próprio espaço com séries e filmes familiares sob a supervisão dos pais.
-                                                      </p>
-
-                                                      <p>
-                                                            O recurso de controle dos pais, incluso nos perfis para crianças e protegido por PIN, permite
-                                                            restringir a classificação etária do conteúdo que as crianças podem ver e bloquear títulos
-                                                            específicos que você não quer que elas assistam.
-                                                      </p>
-                                                </div>
-                                          </div>
-                                    </div>
-                              </div>
-                        </section>
-
-                        <section class="join2">
-                              <div class="join-central">
-                                    <h3>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</h3>
-                                    <form action="">
-                                          <input type="email" name="" class="" placeholder="Email" id="join-input2" />
-                                          <button>Vamos lá</button>
+                                          </li>
+                                          <li class="nav-item">
+                                                <a class="nav-link" href="#">Filmes</a>
+                                          </li>
+                                          <li class="nav-item">
+                                                <a class="nav-link" href="#">Séries</a>
+                                          </li>
+                                          <li class="nav-item">
+                                                <a class="nav-link" href="#">Séries</a>
+                                          </li>
+                                          <li class="nav-item">
+                                                <a class="nav-link" href="#">Documentários</a>
+                                          </li>
+                                          <li class="nav-item">
+                                                <a class="nav-link" href="#">Kids</a>
+                                          </li>
+                                          <li class="nav-item">
+                                                <a class="nav-link" href="#">Login</a>
+                                          </li>
+                                    </ul>
+                                    <form class="d-flex">
+                                          <input
+                                                class="form-control me-2"
+                                                type="search"
+                                                placeholder="Pesquisar"
+                                                aria-label="Search"
+                                          />
+                                          <button class="btn btn-danger" type="submit">Pesquisar</button>
                                     </form>
                               </div>
-                        </section>
+                        </div>
+                  </nav>
 
-                        <footer>
-                              <div class="footer-top">Dúvidas? Ligue 0800-761-4631</div>
-                              <div class="footer-list-div">
-                                    <div class="footer-list-column">
-                                          <ul class="footer-list1">
-                                                <li>
-                                                      <a href="">Perguntas frequentes</a>
-                                                </li>
-                                                <li>
-                                                      <a href="">Relações com investidores</a>
-                                                </li>
-                                                <li>
-                                                      <a href="">Formas de assistir</a>
-                                                </li>
-                                                <li>
-                                                      <a href="">Informações corporativas</a>
-                                                </li>
-                                                <li>
-                                                      <a href="">Só na Netflix</a>
-                                                </li>
-                                          </ul>
-                                          <ul class="footer-list1">
-                                                <li>
-                                                      <a href="">Centro de ajuda</a>
-                                                </li>
-                                                <li>
-                                                      <a href="">Carreiras</a>
-                                                </li>
-                                                <li>
-                                                      <a href="">Termos de uso</a>
-                                                </li>
-                                                <li>
-                                                      <a href="">Entre em contato</a>
-                                                </li>
-                                          </ul>
+                  <div class="header-banner container-fluid">
+                        <div class="row justify-content-center align-items-center">
+                              <div class="col-lg-6 header-center">
+                                    <h1>Filmes, séries e muito mais. Sem limites.</h1>
+                                    <h2>
+                                          Pronto para assistir? Informe seu email para criar ou reiniciar sua
+                                          assinatura.
+                                    </h2>
+                                    <div class="input-group mb-3">
+                                          <input
+                                                type="text"
+                                                class="form-control bg-dark"
+                                                placeholder="Email"
+                                                aria-label="Email"
+                                                aria-describedby="button-addon2"
+                                          />
+                                          <button class="btn btn-danger" type="button" id="button-addon2">
+                                                Vamos lá
+                                          </button>
                                     </div>
-                                    <div class="footer-list-column">
-                                          <ul class="footer-list1">
-                                                <li><a href="">Conta</a></li>
-                                                <li>
-                                                      <a href="">Resgatar cartão pré-pago</a>
-                                                </li>
-                                                <li>
-                                                      <a href="">Privacidade</a>
-                                                </li>
-                                                <li>
-                                                      <a href="">Teste de velocidade</a>
-                                                </li>
-                                          </ul>
-                                          <ul class="footer-list1">
-                                                <li>
-                                                      <a href="">Media Center</a>
-                                                </li>
-                                                <li>
-                                                      <a href="">Comprar cartão pré-pago</a>
-                                                </li>
-                                                <li>
-                                                      <a href="">Preferências de cookies</a>
-                                                </li>
-                                                <li>
-                                                      <a href="">Avisos legais</a>
-                                                </li>
-                                          </ul>
-                                    </div>
+                                    <h3>Assista onde quiser. Cancele quando quiser.</h3>
                               </div>
-                              <div class="footer-bottom">
-                                    <small>Netflix Brasil</small>
-                                    <a href="">Website in English</a>
-                              </div>
-                        </footer>
+                        </div>
                   </div>
-            </div>
+            </header>
       </body>
 </html>
