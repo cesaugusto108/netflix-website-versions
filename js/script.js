@@ -38,6 +38,7 @@ function effects() {
 
 function showSideNavBar() {
       bottomLayer.style.display = "flex";
+
       if (window.visualViewport.width < 360) {
             topLayer.style.left = "260px";
             topLayer.style.overflowY = "hidden";
@@ -47,6 +48,17 @@ function showSideNavBar() {
             topLayer.style.overflowY = "hidden";
             bottomLayer.style.width = "360px";
       }
+
+      if (window.visualViewport.height <= 520) {
+            topLayer.style.left = "660px";
+            topLayer.style.overflowY = "hidden";
+            bottomLayer.style.width = "660px";
+      } else {
+            topLayer.style.left = "360px";
+            topLayer.style.overflowY = "hidden";
+            bottomLayer.style.width = "360px";
+      }
+
       hamMenu.style.opacity = "0";
       hamMenu.style.cursor = "default";
       nav.style.opacity = "0";
