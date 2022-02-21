@@ -1,0 +1,53 @@
+body {
+      background-color: #000;
+      font-family: 'Nunito', sans-serif;
+      font-size: 0.9rem;
+      color: #FFF;
+}
+
+/* HEADER */
+
+header {
+      width: 100%;
+      height: 100vh;
+      background-image: url(../assets/Netflix-Background.jpg);
+      background-position: center;
+      background-size: cover;
+}
+
+.nav {
+      background-color: #000;
+}
+
+.navbar-brand {
+      width: 8%;
+      height: 8%;
+}
+
+#navbarTogglerDemo03 > form > input, #navbarTogglerDemo03 > form > button {
+      border-radius: 0;
+}
+
+.header-center {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+
+body > header > div > div > div > h1 {
+      font-size: 4rem;
+      text-align: center;
+      font-family: 'Anton', sans-serif;
+}
+
+body > header > div > div > div > h2 {
+      font-size: 1.5rem;
+      text-align: center;
+}
+
+body > header > div > div > div > h3 {
+      font-size: 1.2rem;
+      text-align: center;
+}
