@@ -45,7 +45,7 @@ function showSideNavBar() {
             bottomLayer.style.width = "260px";
       } else {
             topLayer.style.left = "360px";
-            topLayer.style.overflowY = "hidden";
+            topLayer.style.overflowY = "visible";
             bottomLayer.style.width = "360px";
       }
 
@@ -55,7 +55,7 @@ function showSideNavBar() {
             bottomLayer.style.width = "660px";
       } else {
             topLayer.style.left = "360px";
-            topLayer.style.overflowY = "hidden";
+            topLayer.style.overflowY = "visible";
             bottomLayer.style.width = "360px";
       }
 
