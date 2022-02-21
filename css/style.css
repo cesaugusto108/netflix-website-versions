@@ -624,7 +624,6 @@ footer a:hover {
 .footer-list-column {
       display: flex;
       padding-top: 4%;
-
 }
 
 .footer-bottom {
@@ -637,6 +636,8 @@ footer a:hover {
 }
 
 /* AJUSTES PARA MOBILE //// */
+
+/* width */
 
 @media (max-width: 1185px) {
       .nav-div-1 {
@@ -681,7 +682,7 @@ footer a:hover {
       .join form {
             width: 160%;
       }
-      
+
       .cards {
             height: 400vh;
       }
@@ -737,7 +738,8 @@ footer a:hover {
             width: 100%;
       }
 
-      .join form, .join2 form {
+      .join form,
+      .join2 form {
             width: 100%;
       }
 }
@@ -779,19 +781,17 @@ footer a:hover {
       .footer-list-div {
             flex-direction: column;
             align-items: center;
-            
       }
 
       .footer-list-column {
             width: 100%;
             justify-content: center;
       }
-      
+
       .footer-list1 {
             width: 250px;
             font-size: 0.9rem;
       }
-
 }
 
 @media (max-width: 415px) {
@@ -831,7 +831,8 @@ footer a:hover {
             height: 70px;
       }
 
-      .join form button, .join2 form button {
+      .join form button,
+      .join2 form button {
             height: 60px;
       }
 
@@ -845,16 +846,32 @@ footer a:hover {
             height: 40px;
       }
 
+      .card-text-content h2 {
+            font-size: 160%;
+      }
+
+      .card-text-content h3 {
+            font-size: 110%;
+      }
+
       #accordion {
             height: 105vh;
       }
 
       #accordion h3 {
-            font-size: 190%;
+            font-size: 120%;
       }
 
       .accordion {
             width: 90%;
+      }
+
+      .accordion button {
+            font-size: 70%;
+      }
+
+      .accordion p {
+            font-size: 90%;
       }
 }
 
@@ -869,5 +886,122 @@ footer a:hover {
 
       .accordion {
             margin-top: -20%;
+      }
+}
+
+/* height */
+
+@media (max-height: 520px) {
+      .nav-menu {
+            display: flex;
+            align-items: center;
+      }
+
+      #nav-menu-button {
+            height: 40px;
+            width: 40px;
+      }
+
+      #nav-menu-button > i:nth-child(1) {
+            font-size: 30px;
+      }
+
+      .central-content {
+            justify-content: flex-end;
+      }
+
+      .main-post {
+            height: 20%;
+      }
+
+      .main-post h1 {
+            font-size: 150%;
+      }
+
+      .main-post h2 {
+            font-size: 110%;
+      }
+
+      .join-central h3 {
+            font-size: 90%;
+      }
+
+      .join-central form {
+            height: 15%;
+      }
+
+      .cards {
+            height: 120vh;
+            justify-content: flex-start;
+      }
+
+      .card-deck-1, .card-deck-2 {
+            flex-direction: row;
+            height: 50%;
+      }
+
+      .card-text-content,
+      .card-image,
+      .square-card {
+            width: 50%;
+      }
+
+      .square-card {
+            flex-direction: row;
+            align-items: center;
+      }
+
+      .card-image {
+            height: 50%;
+            align-items: center;
+      }
+
+      .card-image img {
+            height: 100%;
+      }
+
+      .card-text-content h2 {
+            font-size: 120%;
+      }
+
+      .card-text-content h3 {
+            font-size: 80%;
+      }
+
+      #accordion {
+            height: 160vh;
+      }
+
+      #accordion h3 {
+            font-size: 140%;
+      }
+
+      /* .accordion {
+            width: 90%;
+      } */
+
+      .accordion button {
+            font-size: 70%;
+      }
+
+      .accordion p {
+            font-size: 90%;
+      }
+
+      .join2 {
+            height: 200px;
+            align-items: center;
+      }
+
+      .join2 > div:nth-child(1) > form:nth-child(2) {
+            height: 10%;
+      }
+
+      footer {
+            height: 280px;
+      }
+
+      .footer-list1 {
+            font-size: 85%;
       }
 }
