@@ -41,10 +41,10 @@ header {
 }
 
 .header-banner::before {
-      content: '';
+      content: "";
       width: 100%;
       height: 100%;
-      background-color: #00000070;
+      background-color: #00000050;
       position: absolute;
       top: 0;
       left: 0;
@@ -92,6 +92,10 @@ div.container-fluid:nth-child(1) {
       height: 60px;
 }
 
+.input-group {
+      max-width: 600px;
+}
+
 .btn {
       border-radius: 0;
       background-color: var(--netflix-red);
@@ -111,7 +115,7 @@ div.container-fluid:nth-child(1) {
 }
 
 body > header > div > div > div > h1 {
-      font-size: 4.7rem;
+      font-size: 4.5rem;
       text-align: center;
       font-family: "Anton", sans-serif;
       z-index: 1;
@@ -166,6 +170,13 @@ body > header > div > div > div > h3 {
 
 /* FORM DE CADASTRO */
 
+.join-center {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+
 .join-form {
       margin-top: 80px;
 }
@@ -188,4 +199,41 @@ footer {
 .footer-bottom {
       display: flex;
       flex-direction: column;
+}
+
+@media (max-width: 1080px) {
+      .navbar {
+            background-color: #000;
+      }
+
+      .navbar-brand {
+            width: 12%;
+      }
+}
+
+@media (max-width: 720px) {
+      .navbar-brand {
+            width: 18%;
+      }
+
+      body > header > div > div > div > h1 {
+            font-size: 2rem;
+      }
+
+      body > header > div > div > div > h2 {
+            font-size: 1.1rem;
+      }
+
+      body > header > div > div > div > h3 {
+            font-size: 1rem;
+      }
+
+      #accordion-h2 {
+            font-size: 1.8rem;
+      }
+
+      .join-form h5,
+      footer h5 {
+            font-size: 1.1rem;
+      }
 }
