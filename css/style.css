@@ -213,25 +213,13 @@ footer.container-fluid {
 /* MODAL */
 
 .login-modal {
-      background-color: var(--overlay);
-      width: 100vw;
-      height: 100vh;
-      padding: 40px 0;
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      overflow-y: scroll;
-      z-index: 3;
-}
-
-.login-modal-center {
-      background-image: linear-gradient(to right, #111, #111, transparent);
+      background-image: linear-gradient(to right, #111, #111, transparent, transparent);
       padding: 55px;
-      position: absolute;
+      position: fixed;
       top: 25vh;
-      left: 50%;
-      transform: translate(-75%);
+      left: 12.5vw;
+      display: none;
+      z-index: 3;
 }
 
 .login-modal-header {
@@ -244,11 +232,12 @@ footer.container-fluid {
 }
 
 #login-modal-close {
-      margin-top: -10px;
-      margin-right: -25px;
+      display: block;
       font-size: 1.8rem;
       color: var(--netflix-red);
       cursor: pointer;
+      text-align: right;
+      width: 100%;
 }
 
 .login-modal-form .col-auto {
