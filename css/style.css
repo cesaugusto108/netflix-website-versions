@@ -194,13 +194,20 @@ footer {
       padding-top: 30px;
 }
 
+footer.container-fluid {
+      margin-bottom: 0;
+}
+
 .footer-list {
       padding: 30px 0;
 }
 
-.footer-bottom {
-      display: flex;
-      flex-direction: column;
+.footer-list ul li a, #english {
+      color: #fff;
+}
+
+.footer-list ul li a:hover, #english:hover {
+      color: #bbb;
 }
 
 /* MODAL */
@@ -214,6 +221,7 @@ footer {
       position: fixed;
       top: 0;
       left: 0;
+      overflow-y: scroll;
       z-index: 3;
 }
 
@@ -290,7 +298,7 @@ footer {
       }
 
       .login-modal-center {
-            top: 25vh;
+            top: 0;
             left: 0;
             transform: translate(0);
       }
@@ -322,7 +330,7 @@ footer {
             font-size: 1.1rem;
       }
 
-      .login-modal-center {
-            top: 12.5vh;
+      .footer-list ul li {
+            margin-bottom: 7px;
       }
 }

@@ -52,3 +52,18 @@ modalCloseButton.addEventListener("click", modalClose);
 window.addEventListener("keydown", function (e) {
       if (e.key === "Escape") modalClose();
 });
+
+// efeito no footer
+
+const footer = document.querySelector("footer");
+
+function footerGradient() {
+      if (scrollY > 2000) {
+            footer.style.backgroundImage = "linear-gradient(to top, #b3050e, transparent, transparent)";
+      } else {
+            footer.style.backgroundImage = "linear-gradient(to top, #000, #000)";
+      }
+console.log(scrollY);
+}
+
+window.addEventListener('scroll', footerGradient);
