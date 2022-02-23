@@ -67,7 +67,7 @@
                                     aria-expanded="false"
                                     aria-label="Toggle navigation"
                               >
-                                    <span class="navbar-toggler-icon "></span>
+                                    <span class="navbar-toggler-icon"></span>
                               </button>
                               <a class="navbar-brand" href="#"
                                     ><img
@@ -96,16 +96,12 @@
                                                 <a class="nav-link" href="#">Kids</a>
                                           </li>
                                           <li class="nav-item">
-                                                <a class="nav-link" href="#">Login</a>
-                                          </li>
-                                          <li class="nav-item">
                                                 <a class="nav-link" href="#">Website in English</a>
                                           </li>
                                     </ul>
                                     <form class="d-flex">
-                                          
-                                          <button class="btn btn-outline-danger" type="submit">
-                                                Pesquisar
+                                          <button class="btn btn-outline-danger" type="submit" id="login">
+                                                Login
                                           </button>
                                     </form>
                               </div>
@@ -541,5 +537,71 @@
                         </div>
                   </div>
             </footer>
+
+            <div class="container-fluid login-modal" id="modal">
+                  <div class="row justify-content-center">
+                        <div class="col-lg-6 login-modal-center">
+                              <div class="login-modal-header">
+                                    <h2 id="login-modal-title">Entrar</h2>
+                                    <button" id="login-modal-close"><i class="bi bi-x-circle-fill"></i></button>
+                              </div>
+                              <form class="row gy-2 gx-3 align-items-center login-modal-form">
+                                    <div class="col-12">
+                                          <label class="visually-hidden" for="autoSizingInputGroup1"
+                                                >Email ou telefone</label
+                                          >
+                                          <div class="input-group">
+                                                <div class="input-group-text">Login&NonBreakingSpace;&NonBreakingSpace;</div>
+                                                <input
+                                                      type="email"
+                                                      class="form-control"
+                                                      id="autoSizingInputGroup1"
+                                                      placeholder="Email ou telefone"
+                                                />
+                                          </div>
+                                    </div>
+                                    <div class="col-12">
+                                          <label class="visually-hidden" for="autoSizingInputGroup2"
+                                                >Username</label
+                                          >
+                                          <div class="input-group">
+                                                <div class="input-group-text">Senha&NonBreakingSpace;</div>
+                                                <input
+                                                      type="password"
+                                                      class="form-control"
+                                                      id="autoSizingInputGroup2"
+                                                      placeholder="Senha"
+                                                />
+                                          </div>
+                                    </div>
+
+                                    <div class="col-6">
+                                          <div class="form-check">
+                                                <input
+                                                      class="form-check-input"
+                                                      type="checkbox"
+                                                      id="autoSizingCheck"
+                                                />
+                                                <label class="form-check-label" for="autoSizingCheck">
+                                                      Lembre-se de mim
+                                                </label>
+                                          </div>
+                                    </div>
+                                    <div class="col-6">
+                                          <a href="">Precisa de ajuda?</a>
+                                    </div>
+                                    <div class="col-12 mt-3">
+                                          <button type="submit" class="btn btn-outline-danger">Entrar</button>
+                                    </div>
+                                    <div class="col-12 mt-4">
+                                          <span id="facebook"> <a href=""><i class="bi bi-facebook"></i>&NonBreakingSpace;&NonBreakingSpace;Conectar com o Facebook</a> </span>
+                                    </div>
+                                    <div class="col-12 mt-5">
+                                          <span>Novo por aqui?<a href=""> Assine agora.</a></span>
+                                    </div>
+                              </form>
+                        </div>
+                  </div>
+            </div>
       </body>
 </html>

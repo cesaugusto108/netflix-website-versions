@@ -30,3 +30,25 @@ function formInputChange() {
 }
 
 formInputChange();
+
+// modal
+
+const login = document.getElementById("login");
+const modal = document.getElementById("modal");
+const modalCloseButton = document.getElementById("login-modal-close");
+
+function modalShow() {
+      modal.style.display = "block";
+      nav.style.display = "none";
+}
+
+function modalClose() {
+      modal.style.display = "none";
+      nav.style.display = "block";
+}
+
+login.addEventListener("click", modalShow);
+modalCloseButton.addEventListener("click", modalClose);
+window.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") modalClose();
+});
