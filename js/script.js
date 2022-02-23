@@ -81,7 +81,7 @@ window.addEventListener("click", function (e) {
 const footer = document.querySelector("footer");
 
 function footerGradient() {
-      if (scrollY > 2000) {
+      if (scrollY > 2158) {
             footer.style.backgroundImage = "linear-gradient(to top, #b3050e, transparent, transparent)";
       } else {
             footer.style.backgroundImage = "linear-gradient(to top, #000, #000)";

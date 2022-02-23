@@ -70,14 +70,6 @@ div.container-fluid:nth-child(1) {
       color: #bbb;
 }
 
-.nav-item a:hover {
-      color: var(--netflix-red);
-}
-
-.nav-link.active {
-      color: #fff;
-}
-
 .form-control {
       border-radius: 0;
       border-color: transparent;
@@ -286,7 +278,7 @@ footer.container-fluid {
             font-size: 3rem;
       }
 
-      .login-modal-center {
+      .login-modal {
             top: 0;
             left: 0;
             transform: translate(0);
